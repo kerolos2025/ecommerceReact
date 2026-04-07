@@ -16,7 +16,7 @@ export default function Home() {
         <Container>
           <Row className="justify-content-center text-center">
             <Col md={8}>
-              <h1 className="display-3 fw-bold mb-3">Welcome 👋</h1>
+              <h1 className="display-3 fw-bold mb-3">Welcome Kero👋</h1>
 
               <p className="lead mb-4">
                 We’re happy to have you here. Explore and enjoy your journey.
