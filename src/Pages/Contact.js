@@ -21,13 +21,13 @@ export default function Contact() {
       [name]: value,
     });
 
-    if (value == "") {
+    if (value === "") {
       setErrors({
         ...errors,
         [name]: `${name} is required`,
       });
     } else {
-      if (name == "email") {
+      if (name === "email") {
         let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!pattern.test(value)) {
           setErrors({
@@ -40,7 +40,7 @@ export default function Contact() {
             [name]: "",
           });
         }
-      } else if (name == "name") {
+      } else if (name === "name") {
         value.length > 5
           ? setErrors({
               ...errors,
@@ -122,7 +122,7 @@ export default function Contact() {
               className="btn btn-primary w-100"
               type="submit"
               disabled={
-                Object.values(user).some((u) => u == "") ||
+                Object.values(user).some((u) => u === "") ||
                 Object.values(errors).some((error) => error !== "")
               }
             >
